@@ -4,22 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>cadastro.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
-        <form>
-            <h1>Cadastre-se</h1>
-            <input type="text" id="descricao" placeholder="digite seu nome">
-            <input type="text" id="InformeEmail" placeholder="digite seu e-mail">
-            <input type="text" id="Informesenha" placeholder="digite seu Telefone">
-        </form>
-<ul id="listaDeUsuarios">
-    <li>primeiro usuario</li>
-</ul>
+    <div class="conteiner">
 
-    </main>
+        <section class="header">
+            <h1>Cadastre-se</h1>
+        </section>
+        <form class="form" id="form">
+            <div class="divnome">
+                <label for="username">Informe seu nome:</label>
+                <input type="text" 
+                id="username" 
+                placeholder="digite seu nome">
+                <a>AQUI APARECERA A MENSAGEM DE ERRO</a>
+            </div>
+
+            <div class="divnome">
+                <label for="e-mail">Informe seu E-mail</label>
+                <input type="email" id="Emailusuario" placeholder="digite seu e-mail">
+                <a>AQUI APARECERA A MENSAGEM DE ERRO</a>
+            </div>
+
+            <div class="mostrarnome">
+                <ul id="listaDeUsuarios" class=" listaDeUsuarios">
+                    <li>primeiro usuario <button>X</button></li><br>
+                </ul>
+            </div>
+            <button class="botao" id="add">Cadastra-se</button>
+        </form>
+
+
+    </div>
     <script src="script.js"></script>
 </body>
 
