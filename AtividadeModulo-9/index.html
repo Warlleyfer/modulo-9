@@ -5,22 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
-        <form>
-            <h1>Cadastre-se</h1>
-            <input type="text" id="descricao" placeholder="digite seu nome">
-            <input type="text" id="InformeEmail" placeholder="digite seu e-mail">
-            <input type="text" id="Informesenha" placeholder="digite seu Telefone">
-        </form>
-<ul id="listaDeUsuarios">
-    <li>primeiro usuario</li>
-</ul>
+   <div class="head">
+    <h1> Cadastro</h1>
+   </div>
+   <div class="conteiner">
+       <label for="text">Informe seu Nome :</label>
 
-    </main>
-    <script src="script.js"></script>
+       <input type="text" placeholder="Digite seu Nome!!" id="NomeValor">
+
+       <label for="text">Informe seu E-mail:</label>
+
+       <input type="text" placeholder="Digite seu E-mail!!" id="EmailValor">
+</div>
+<button id="Botao">Cadastrar</button>
+<div class="divUsuarios">
+    <ul id="ListaDeTarefas">
+        <li>
+            AQUI APARECERA OS USUARIOS 
+        </li>
+    </ul>
+    <script type="module" src="JS/app.js"></script>
+</div>
 </body>
 
 </html>
